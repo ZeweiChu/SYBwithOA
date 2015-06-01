@@ -1,2 +1,6 @@
 /bin/
+/src/combinator/
+/src/query/
+/src/transform/
+/src/util/
 *~
