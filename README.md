@@ -1,4 +1,6 @@
-# SYBwithOA
-This repository contains all materials related to the Paper "Scrap Your Boilerplate with Object Algebras"
+# Scrap Your Boilerplate with Object Algebras
+This repository contains source code artifacts related to the Paper "Scrap Your Boilerplate with Object Algebras". 
+
+
 
 
