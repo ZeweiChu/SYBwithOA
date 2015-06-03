@@ -12,9 +12,9 @@ Copyright (c) 2014-2015
 
 This repository consists of several Java projects developed in Eclipse IDE.
 
-- [Shy](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy): The implementation of _Shy_ framework introduced in the paper. Source code is available and the library can be created by this project.
-- [Library.jar](https://github.com/JasonCHU/SYBwithOA/blob/master/Library.jar): The latest version of _Shy_ created by the Java project above. You can use this _.jar_ file directly as a library of _Shy_ framework.
-- [Examples](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples): All examples mentioned in the paper for illustrating Object Algebras and the use of _Shy_ framework are included in this project.
+- [Shy](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy): The implementation of __Shy__ framework introduced in the paper. Source code is available and the library can be created by this project.
+- [Library.jar](https://github.com/JasonCHU/SYBwithOA/blob/master/Library.jar): The latest version of __Shy__ exported from the project above. You can use this _.jar_ file directly as a library of _Shy_ framework.
+- [Examples](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples): All examples mentioned in the paper for illustrating Object Algebras and the use of __Shy__  are included in this project.
 - [CaseStudy](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy): Case study in the paper (QL), a domain-specific language for questionnaires.
 
 ## Installing Java and Eclipse IDE
@@ -24,5 +24,5 @@ These projects have a minimum requirement of Java 8. Please make sure JDK 8 is i
 - JDK 8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 - Eclipse: https://eclipse.org/downloads/
 
-More details on instructions/configurations are provided by each project. Please seek the files Readme.md under those directories for further help.
+More details on instructions/configurations are provided by each project. Please seek the file Readme.md under each directory for further help.
 

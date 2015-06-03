@@ -1,12 +1,12 @@
 # Case Study
 
-In the case study section of the paper, _Shy_ framework is applied to the QL language, a DSL for questionnaires, to illustrate how _Shy_ helps to remove boilerplate code and reduce the size of client code when traversing AST structures.
+In the case study section of the paper, __Shy__ framework is applied to the QL language, a DSL for questionnaires, to illustrate how __Shy__ helps to remove boilerplate code and reduce the size of client code when traversing AST structures.
 
 ## How to build
 
 Please make sure all the three projects are imported into Eclipse:
 
-- Library: A copy of [Shy](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy), the implementation of _Shy_ framework.
-- QL: The main project for case study, where QL is defined and implemented, _Shy_ is applied and other experiments are conducted. 
-- naked-object-algebras:  Object Algebras decorated with concrete syntax annotations. Also it helps to generate an ANTLR4 parser automatically.
+- [Library](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy/Library): A copy of [Shy](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy), the implementation of _Shy_ framework.
+- [QL](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy/QL): The main project for case study, where QL is defined and implemented, __Shy__ is applied and other experiments are conducted. 
+- [naked-object-algebras](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy/naked-object-algebras):  Object Algebras decorated with concrete syntax annotations. Also it helps to generate an ANTLR4 parser automatically.
 
