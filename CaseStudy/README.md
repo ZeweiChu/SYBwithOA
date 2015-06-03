@@ -6,7 +6,7 @@ In the case study section of the paper, __Shy__ framework is applied to the QL l
 
 Please make sure all the three projects are imported into Eclipse:
 
-- [Library](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy/Library): A copy of [Shy](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy), the implementation of _Shy_ framework.
+- [Library](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy/Library): A copy of [Shy](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy), the implementation of __Shy__ framework.
 - [QL](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy/QL): The main project for case study, where QL is defined and implemented, __Shy__ is applied and other experiments are conducted. 
 - [naked-object-algebras](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy/naked-object-algebras):  Object Algebras decorated with concrete syntax annotations. Also it helps to generate an ANTLR4 parser automatically.
 
