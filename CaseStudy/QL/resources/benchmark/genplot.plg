@@ -1,0 +1,32 @@
+
+#assumes astData and algData and theTitle set on commandline
+
+set terminal postscript #eps #color colortext
+
+set key left
+
+set grid ytics lt 0 lw 1 lc rgb "#bbbbbb"
+set grid xtics lt 0 lw 1 lc rgb "#bbbbbb"
+
+f(x) = A0*x
+fit f(x) astData every ::1 using 1:2 via A0
+g(x) = A1*x
+fit g(x) algData every ::1 using 1:2 via A1
+
+
+set xtics font ",18"
+set ytics font ",18"
+set xlabel font ",18"
+set ylabel font ",18"
+set key font ",18"
+set title font ",18"
+
+set title theTitle 
+set xlabel "Input size (bytes)"
+set ylabel "Running time (s)"
+plot astData every ::1 using 1:2 \
+     title "AST", \
+     f(x) lt 0 lw 3 title "Linear (AST)", \
+     algData every ::1 using 1:2 \
+     title "Shy" pt 6, \
+     g(x) lt 2 lw 1 title "Linear (Shy)"

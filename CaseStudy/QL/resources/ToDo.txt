@@ -1,0 +1,5 @@
+- only allow one form per file
+- what about duplicates?
+
+TODO replace short variable names for longer names that communicates the intent
+TODO change method name for methods that communicate meaning
