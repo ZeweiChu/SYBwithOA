@@ -12,12 +12,17 @@ Copyright (c) 2014-2015
 
 This repository consists of several Java projects developed in Eclipse IDE.
 
-- [Shy](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy): The implementation of _Shy_, a Java framework introduced in the paper. Source code is available and able to create the library as a _.jar_ file for practical use.
-- [Library.jar](https://github.com/JasonCHU/SYBwithOA/blob/master/Library.jar): The latest version of _Shy_ created by project [Shy](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy). You can use it as a library directly.
-- [Examples](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples): The project contains all the examples mentioned in the paper for illustrating Object Algebras and the use of _Shy_ framework.
+- [Shy](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy): The implementation of _Shy_ framework introduced in the paper. Source code is available and the library can be created by this project.
+- [Library.jar](https://github.com/JasonCHU/SYBwithOA/blob/master/Library.jar): The latest version of _Shy_ created by the Java project above. You can use this _.jar_ file directly as a library of _Shy_ framework.
+- [Examples](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples): All examples mentioned in the paper for illustrating Object Algebras and the use of _Shy_ framework are included in this project.
 - [CaseStudy](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy): Case study in the paper (QL), a domain-specific language for questionnaires.
 
 ## Installing Java and Eclipse IDE
 
-These projects have a minimum requirement of Java 8. Please make sure JDK 8 is in use before you close these projects or use the library.
+These projects have a minimum requirement of Java 8. Please make sure JDK 8 is in use before you clone these projects or use the library. Also Eclipse IDE for Java is recommended here for developers using this framework.
+
+- JDK 8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+- Eclipse: https://eclipse.org/downloads/
+
+More details on instructions/configurations are provided by each project. Please seek the files Readme.md under those directories for further help.
 
