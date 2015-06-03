@@ -1,5 +1,5 @@
 # Scrap Your Boilerplate with Object Algebras
-This repository contains source code artifacts related to the paper "Scrap Your Boilerplate with Object Algebras", to appear in the proceedings of [SPLASH 2015 OOPSLA](http://2015.splashcon.org/track/oopsla2015).
+This repository contains source code artifacts related to the paper "Scrap Your Boilerplate with Object Algebras", to appear in the proceedings of [SPLASH 2015 OOPSLA (OOPSLA'15)](http://2015.splashcon.org/track/oopsla2015).
 
 Copyright (c) 2014-2015
 
