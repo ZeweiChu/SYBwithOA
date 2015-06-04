@@ -76,4 +76,6 @@ public interface ExpAlgQuery<R> extends ExpAlg<R> {
 
 Check out other auto-generated code by yourself. 
 
-If they are not created automatically, build your project manually. Another possible reason is that the auto-generated packages are hidden by default, you may set the default generated source directory to be "src". In Eclipse, that is at the setting of Java Compiler - Annotation Processing - Generated Source Directory. Warning: This library may pollute the packages as 4 packages namely "combinator", "query", "transform" and "util" will be created at the root directory. 
+Warning: This library may pollute the packages as 4 packages namely "combinator", "query", "transform" and "util" will be created at the root directory.
+
+You may want to see more examples on how to write Object Algebras and make use of the __Shy__ framework. The examples showing up in the paper are available [here](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples).
