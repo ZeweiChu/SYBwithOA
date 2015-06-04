@@ -2,7 +2,7 @@
 
 Source code of the examples shown in the paper can be found here. Since __Shy__ is based on Object Algebras and Java annotations, with those examples you'll be able to find how a simple annotation "@Algebra" helps to implement traversals of complex AST structures easily.
 
-For more details on the usage of "@Algebra", please click: https://github.com/JasonCHU/SYBwithOA/tree/master/Shy
+For more details on how to configure your own project and use the __Shy__ library, please click: https://github.com/JasonCHU/SYBwithOA/tree/master/Shy
 
 ## How to build
 
