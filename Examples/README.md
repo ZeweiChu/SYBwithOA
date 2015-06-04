@@ -8,10 +8,19 @@ For more details on the usage of "@Algebra", please click: https://github.com/Ja
 
 Simply import this directory into Eclipse IDE you are using. Don't forget to make sure Java 8 is available in your Eclipse.
 
+This project requires a library of the __Shy__ framework, but a _.jar_ file has already been put in /lib/.
 
 ## Contents (with reference to the paper)
 
-- [Background: Object Algebras (Section 2)](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples/src/ObjectAlgebras): Small examples of Object Algebras.
-- [An Overview of Shy (Section 3)](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples/src/MiniQL): The example of MiniQL.
-- [Queries, Transformations and Extensibility (Section 4-8)](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples/src/ExpAlg): The example of ExpAlg, the Object Algebra interface standing for an expression, and its extensions.
-- [Utils](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples/src/Utils): Some utilities are defined here.
+- [/src/ObjectAlgebras/](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples/src/ObjectAlgebras): Small examples of Object Algebras. See the section "Background: Object Algebras" of the paper.
+- [/src/MiniQL/](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples/src/MiniQL): The example of MiniQL. See the section "MiniQL".
+- [/src/ExpAlg/](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples/src/ExpAlg): The example of ExpAlg, which is the Object Algebra interface standing for an expression, and its extensions. See the sections "Queries", "Generalized Queries", "Transformations", "Contextual Transformations" and "Extensible Queries and Transformations".
+- [/src/Utils/](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples/src/Utils): Some utilities are defined here.
+
+## Notes
+
+__Shy__ uses Java reflection to generate traversal code for Object Algebra interfaces annotated with "@Algebra" automatically. Since this Java project is already configured, when it is successfully imported into Eclipse, new classes and interfaces will be generated in:
+
+- /src/query/: Generic queries and generic generalized queries.
+- /src/transform/: Generic transformations and generic contextual transformations.
+- /src/util/: Utilities for generic transformations. The generic transformations are generated as interfaces, but here default classes with constructors are provided for convenient use.
