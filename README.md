@@ -12,9 +12,9 @@ Copyright (c) 2014-2015
 
 This repository consists of several Java projects developed in Eclipse IDE.
 
-- [Shy](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy): The implementation of __Shy__ framework introduced in the paper. Source code is available and the library can be created by this project.
+- [Shy](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy): The implementation of __Shy__ framework introduced in the paper. Source code is available and the library can be created by this project. __Click [here](https://github.com/JasonCHU/SYBwithOA/tree/master/Shy) if you don't know how to include this library in your own project.__
 - [Library.jar](https://github.com/JasonCHU/SYBwithOA/blob/master/Library.jar): The latest version of __Shy__ exported from the project above. You can use this _.jar_ file directly as a library of _Shy_ framework.
-- [Examples](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples): All examples mentioned in the paper for illustrating Object Algebras and the use of __Shy__  are included in this project.
+- [Examples](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples): All examples mentioned in the paper for illustrating Object Algebras and the use of __Shy__  are included in this project. __Click [here](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples) if you need some guidance on how to write Object Algebras and use the annotation provided by "Shy".__
 - [CaseStudy](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy): Case study in the paper (QL), a domain-specific language for questionnaires.
 
 ## Installing Java and Eclipse IDE
