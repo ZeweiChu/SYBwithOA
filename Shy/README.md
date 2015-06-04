@@ -1,9 +1,23 @@
 # Shy
-Shy is a framework automatically generating Object Algebras Queries and Transformations based on generic OA Interfaces. The library has been tested in JRE 8 in Eclipse. 
+__Shy__ is a framework automatically generating Object Algebras queries and transformations for user-defined generic Object Algebra interfaces annotated with a simple "@Algebra". With these generated classes/interfaces, users can then inherit from them to implement structure-shy traversals by overriding only a few interesting cases. Hence boilerplate traversal code is avoided. The library has been tested in JRE 8 in Eclipse. 
 
-For a complete example of writing object algebras code with Shy, please refer [this](https://github.com/JasonCHU/ObjectAlgebraFramework/tree/master/ObjectAlgebras) repository. 
+For complete examples of writing object algebras code with Shy, please refer [SYBwithOA.Examples](https://github.com/JasonCHU/SYBwithOA/tree/master/Examples).
 
-To use this library, download Library.jar file at the main repository, or you may also export the library yourself from the Java project in the repo. 
+## Why use this library?
+
+Some advantages of __Shy__ are:
+
+- __Implemented in plain Java__: This project contains the complete source code of __Shy_, and it's written in plain Java using Java reflection and annotations. Users can easily export this project to create a _.jar_ file. It's a light-weighted library for use.
+
+- __Boilerplate code avoided__: Generic traversals are generated automatically for user-defined data structures annotated with "@Algebra". In that case boilerplate traversal code is avoided and the code users have to write is much shorter.
+
+- __Adaptive and structure shy__: The generated traversals are structure-shy and adaptive to future extensions. Extensibility in both dimensions, including structures and behaviours, is inherited from Object Algebras. Moreover, __Shy__ supports separate compilation.
+
+- __Type-safe__: Type safety is guaranteed by Java type system, and no runtime casts are needed for traversal code.
+
+## How to use?
+
+To use this library, download [Library.jar](https://github.com/JasonCHU/SYBwithOA/blob/master/Library.jar) file at the main repository, or you may also export the library yourself from this Java project. 
 
 Include Library.jar in the Java build path of your project. Also include Library.jar in the factory path of your project, that is, Java Compiler - Annotation Processing - Factory Path if you are using Eclipse. 
 
