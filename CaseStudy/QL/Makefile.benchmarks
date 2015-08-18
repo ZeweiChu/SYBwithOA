@@ -3,6 +3,7 @@
 all: benchmark plots/controldeps.pdf plots/rename.pdf plots/inline.pdf plots/typeenv.pdf
 
 benchmark:
+	mkdir -p plots
 	java -cp bin:lib/antlr-4.2.2-complete.jar:../Library/bin:../naked-object-algebras/bin _ast/benchmark/Benchmark
 
 
