@@ -9,13 +9,6 @@ interface MulAlg<E> extends ExpAlg<E> {
 	E Mul(E l, E r);
 }
 
-class MulEval extends Eval 
- implements MulAlg<Integer> {
-	public Integer Mul(Integer l, Integer r) {
-		return l * r;
-	}
-}
-
 class Eval implements ExpAlg<Integer> {
 	public Integer Lit(int n) {
 		return n; 
@@ -32,20 +25,27 @@ class Print implements ExpAlg<String> {
 	}
 }
 
-public class ObjectAlgebras {
+class MulEval extends Eval 
+ implements MulAlg<Integer> {
+	public Integer Mul(Integer l, Integer r) {
+		return l * r;
+	}
+}
 
-	public static <E> E make3Plus5(ExpAlg<E> alg){
-		return alg.Add(alg.Lit(3), alg.Lit(5));
+public class ObjectAlgebras {
+	<E> E makeExp(ExpAlg<E> alg){
+		return alg.Add(alg.Lit(2), alg.Lit(3));
 	}
-	public static void test(){
-		Eval eval = new Eval();
-		Print print = new Print();	
-		int x = make3Plus5(eval);
-		String s = make3Plus5(print);
-		System.out.println("int: " + x); //int: 8
-		System.out.println("String: " + s); //String: 3 + 5
+	<E> E makeMul(MulAlg<E> alg){
+		return alg.Mul(alg.Add(alg.Lit(2), alg.Lit(3)), alg.Lit(4));
 	}
-	public static void main(String[] argv){
-		test();
+	public int evalExp() {
+		return makeExp(new Eval());
+	}
+	public String printExp() {
+		return makeExp(new Print());
+	}
+	public int evalMul() {
+		return makeMul(new MulEval());
 	}
 }

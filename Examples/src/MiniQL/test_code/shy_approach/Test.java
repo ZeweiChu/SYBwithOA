@@ -1,10 +1,11 @@
 package MiniQL.test_code.shy_approach;
 
 import java.util.Arrays;
+import java.util.Set;
+
 import MiniQL.oa_interface.QLAlg;
 
-public class Test {
-	
+public class Test {	
 	<E, S, F> F makeQL(QLAlg<E, S, F> alg) {
 		return alg.Form("DriverLicense", Arrays.asList(
 				alg.Question("name", "Name?", "string"), 
@@ -14,19 +15,10 @@ public class Test {
 					           alg.Question("license", 
 					        		   "License?", "boolean"))));		
 	}
-	
-	void println(Object o) {
-		System.out.println(o);
+	public Set<String> usedVars() {
+		return makeQL(new UsedVars());
 	}
-	
-	void go() {
-		println(makeQL(new UsedVars()));
-		println(makeQL(new Rename<>(new UsedVars())));
-	}
-	
-	public static void main(String args[]) {
-		Test t = new Test();
-		t.go();
-	}
-	
+	public Set<String> usedVarsAfterRenaming() {
+		return makeQL(new Rename<>(new UsedVars()));
+	}	
 }

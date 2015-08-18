@@ -5,7 +5,6 @@ import java.util.Set;
 import MiniQL.oa_interface.QLAlg;
 
 public class Test {
-	
 	<E, S, F> F makeQL(QLAlg<E, S, F> alg) {
 		S s0 = alg.Question("name", "What is your name?", "string");
 		S s1 = alg.Question("age", "What is your age?", "integer");
@@ -14,17 +13,10 @@ public class Test {
 		S s2 = alg.If(ifStmt, thenStmt);
 		return alg.Form("DriverLicense", Arrays.asList(s0, s1, s2));		
 	}
-	
-	void go() {
-		UsedVars usedVars = new UsedVars();
-		System.out.println(makeQL(usedVars));
-		Rename<Set<String>, Set<String>, Set<String>> renaming = new Rename<Set<String>, Set<String>, Set<String>>(usedVars);
-		System.out.println(makeQL(renaming));
+	public Set<String> usedVars() {
+		return makeQL(new UsedVars());
 	}
-	
-	public static void main(String args[]) {
-		Test t = new Test();
-		t.go();
+	public Set<String> usedVarsAfterRenaming() {
+		return makeQL(new Rename<>(new UsedVars()));
 	}
-	
 }

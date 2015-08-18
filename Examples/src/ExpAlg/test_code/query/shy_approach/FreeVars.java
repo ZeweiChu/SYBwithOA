@@ -6,8 +6,7 @@ import Utils.SetMonoid;
 import query.ExpAlgQuery;
 import library.Monoid;
 
-interface FreeVars extends ExpAlgQuery<Set<String>>
-{
+public interface FreeVars extends ExpAlgQuery<Set<String>> {
 	default Monoid<Set<String>> m() {
 		return new SetMonoid<String>();
 	}
