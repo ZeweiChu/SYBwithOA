@@ -4,8 +4,7 @@ all: benchmark plots/controldeps.pdf plots/rename.pdf plots/inline.pdf plots/typ
 
 benchmark:
 	mkdir -p plots
-	java -cp bin:lib/antlr-4.2.2-complete.jar:../Library/bin:../naked-object-algebras/bin _ast/benchmark/Benchmark
-
+	java -Xmx2048M -Xms512M  -server -d64 -cp bin:../Library/bin:lib/antlr-4.2.2-complete.jar:../naked-object-algebras/bin _ast.benchmark.Benchmark 
 
 plots/controldeps.eps: resources/benchmark/genplot.plg
 	(cd resources/benchmark/; \
