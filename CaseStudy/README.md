@@ -10,3 +10,18 @@ Please make sure all the three projects are imported into Eclipse:
 - [QL](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy/QL): The main project for case study, where QL is defined and implemented, __Shy__ is applied and other experiments are conducted. 
 - [naked-object-algebras](https://github.com/JasonCHU/SYBwithOA/tree/master/CaseStudy/naked-object-algebras):  Object Algebras decorated with concrete syntax annotations. It helps to generate an ANTLR4 parser automatically.
 
+## Generating the benchmark plots
+
+To generate the benchmark plots, you need the following tools: GNU Make, ps2pdf, gnuplot.
+
+- Make sure all code has been built in Eclipse (see above).
+
+- On the commandline in the directory `CaseStudy/QL` issue: 
+```
+make -f Makefile.benchmarks
+```
+
+- The plots are generated in the subdir `plots`.
+
+
+
