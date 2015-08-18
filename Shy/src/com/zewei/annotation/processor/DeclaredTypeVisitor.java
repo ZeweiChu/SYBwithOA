@@ -7,9 +7,7 @@ public class DeclaredTypeVisitor implements TypeVisitor<String, Element> {
 
 	@Override
 	public String visitDeclared(DeclaredType t, Element p) {
-		String res = t.getTypeArguments().toString().replace(" ", "");
-		int len = res.length();
-		res = res.substring(1, len-1);
+		String res = t.getTypeArguments().toString().replaceAll("[\\s\\[\\]]", "");
 		return res;
 	}
 

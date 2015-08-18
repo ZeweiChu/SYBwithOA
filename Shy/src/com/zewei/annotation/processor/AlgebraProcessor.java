@@ -52,7 +52,7 @@ public class AlgebraProcessor extends AbstractProcessor {
 			classContent = createTransformClass(folder, element, lTypeArgs, typeArgs);
 			jfo = null;
 			try {
-				jfo = filer.createSourceFile(folder + "/" + algName +"Transform", element);
+				jfo = filer.createSourceFile(folder + "." + algName +"Transform", element);
 				jfo.openWriter().append(classContent).close();
 			} catch(IOException ioe) {
 				ioe.printStackTrace();
@@ -62,7 +62,7 @@ public class AlgebraProcessor extends AbstractProcessor {
 			classContent = createUtilClass(folder, element, lTypeArgs, typeArgs);
 			jfo = null;
 			try {
-				jfo = filer.createSourceFile(folder + "/" + algName +"Trans", element);
+				jfo = filer.createSourceFile(folder + "." + algName +"Trans", element);
 				jfo.openWriter().append(classContent).close();
 			} catch(IOException ioe) {
 				ioe.printStackTrace();
@@ -73,7 +73,7 @@ public class AlgebraProcessor extends AbstractProcessor {
 			classContent = createSubstTransformClass(folder, element, lTypeArgs, typeArgs);
 			jfo = null;
 			try {
-				jfo = filer.createSourceFile(folder + "/G_" + algName +"Transform", element);
+				jfo = filer.createSourceFile(folder + ".G_" + algName +"Transform", element);
 				jfo.openWriter().append(classContent).close();
 			} catch(IOException ioe) {
 				ioe.printStackTrace();
@@ -86,7 +86,7 @@ public class AlgebraProcessor extends AbstractProcessor {
 			classContent = createQueryClass(folder, element, lTypeArgs, typeArgs);
 			jfo = null;
 			try{
-				jfo = filer.createSourceFile(folder + "/" + algName + "Query", element);
+				jfo = filer.createSourceFile(folder + "." + algName + "Query", element);
 				jfo.openWriter().append(classContent).close();
 			}catch(IOException ioe){
 				ioe.printStackTrace();
@@ -97,7 +97,7 @@ public class AlgebraProcessor extends AbstractProcessor {
 			classContent = createGeneralQueryClass(folder, element, lTypeArgs, typeArgs);
 			jfo = null;
 			try{
-				jfo = filer.createSourceFile(folder + "/G_" + algName + "Query", element);
+				jfo = filer.createSourceFile(folder + ".G_" + algName + "Query", element);
 				jfo.openWriter().append(classContent).close();
 			}catch(IOException ioe){
 				ioe.printStackTrace();
@@ -108,7 +108,7 @@ public class AlgebraProcessor extends AbstractProcessor {
 			classContent = createCombinatorClass(folder, element, typeArgs);
 			jfo = null;
 			try{
-				jfo = filer.createSourceFile(folder + "/Combine" + algName, element);
+				jfo = filer.createSourceFile(folder + ".Combine" + algName, element);
 				jfo.openWriter().append(classContent).close();
 			}catch(IOException ioe){
 				ioe.printStackTrace();
