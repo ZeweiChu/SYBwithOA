@@ -20,7 +20,7 @@ This project requires a library of the __Shy__ framework, but a _.jar_ file has 
 
 ## Notes
 
-__Shy__ uses Java reflection to generate traversal code for Object Algebra interfaces annotated with "@Algebra" automatically. Since this Java project is already configured, when it is successfully imported into Eclipse (or you compile those java files from command line), new classes and interfaces will be generated in:
+__Shy__ generates traversal code for Object Algebra interfaces annotated with "@Algebra" automatically. Since this Java project is already configured, when it is successfully imported into Eclipse (or you compile those java files from command line), new classes and interfaces will be generated in:
 
 - /src/query/: Generic queries and generic generalized queries.
 - /src/transform/: Generic transformations and generic contextual transformations.
