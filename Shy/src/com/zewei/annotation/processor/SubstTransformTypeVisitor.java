@@ -4,6 +4,12 @@ import java.util.List;
 
 import javax.lang.model.type.*;
 
+/**
+ * String template for contextual transformations.
+ * For each constructors/case it generates an overridden method correspondingly.
+ * This class implements "TypeVisitor" and overrides the method "visitExecutable()".
+ *
+ */
 public class SubstTransformTypeVisitor implements TypeVisitor<String, String[]> {
 	
 	int arrayContains(String[] ls, String s) {

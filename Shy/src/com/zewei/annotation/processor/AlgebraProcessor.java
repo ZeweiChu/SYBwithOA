@@ -10,6 +10,11 @@ import javax.lang.model.element.*;
 import javax.lang.model.type.TypeMirror;
 import javax.tools.JavaFileObject;
 
+/**
+ * This annotation processor is defined for "@Algebra".
+ * Such a processor extends the class "AbstractProcessor", and overrides the method "process()" with its own behaviors.
+ *
+ */
 @SupportedAnnotationTypes(value={"com.zewei.annotation.processor.Algebra"})
 @SupportedSourceVersion(SourceVersion.RELEASE_6)
 public class AlgebraProcessor extends AbstractProcessor {
@@ -37,15 +42,12 @@ public class AlgebraProcessor extends AbstractProcessor {
 			}
 
 			// Initialization.
+			// Get the type name and its type parameters (each interface annotated with "@Algebra").
 			TypeMirror tm = element.asType();
 			String typeArgs = tm.accept(new DeclaredTypeVisitor(), element);
 			String[] lTypeArgs = toList(typeArgs);
 			algName = element.getSimpleName().toString();
 			
-			// Attention!
-			// Currently the program only supports algebras with arguments of the methods to be:
-			// (1) Simple types. "String / int / float / ...".
-			// (2) List<R>, where R must be one of the generic types.
 			
 			// Create transform classes "AlgNameTransform".
 			folder = "transform";
@@ -81,7 +83,6 @@ public class AlgebraProcessor extends AbstractProcessor {
 			
 			
 		    // Create query classes "AlgNameQuery".
-			// One issue here. Using "java.util.List" instead of "List".
 			folder = "query";
 			classContent = createQueryClass(folder, element, lTypeArgs, typeArgs);
 			jfo = null;

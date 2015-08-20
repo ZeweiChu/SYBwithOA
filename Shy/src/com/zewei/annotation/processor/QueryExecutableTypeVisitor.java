@@ -3,6 +3,12 @@ package com.zewei.annotation.processor;
 import java.util.List;
 import javax.lang.model.type.*;
 
+/**
+ * String template for queries.
+ * For each constructors/case it generates an overridden method correspondingly.
+ * This class implements "TypeVisitor" and overrides the method "visitExecutable()".
+ *
+ */
 public class QueryExecutableTypeVisitor implements TypeVisitor<String, String[]> {
 	
 	int arrayContains(String[] ls, String s) {

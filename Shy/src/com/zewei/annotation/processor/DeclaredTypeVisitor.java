@@ -3,6 +3,10 @@ package com.zewei.annotation.processor;
 import javax.lang.model.element.Element;
 import javax.lang.model.type.*;
 
+/**
+ * This visitor helps to collect the type arguments of a type as strings.
+ *
+ */
 public class DeclaredTypeVisitor implements TypeVisitor<String, Element> {
 
 	@Override
