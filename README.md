@@ -1,5 +1,5 @@
 # Scrap Your Boilerplate with Object Algebras
-This repository contains source code artifacts related to the paper "Scrap Your Boilerplate with Object Algebras", to appear in the proceedings of [SPLASH 2015 OOPSLA (OOPSLA'15)](http://2015.splashcon.org/track/oopsla2015).
+[This repository](https://github.com/JasonCHU/SYBwithOA) contains source code artifacts related to the paper "Scrap Your Boilerplate with Object Algebras", to appear in the proceedings of [SPLASH 2015 OOPSLA (OOPSLA'15)](http://2015.splashcon.org/track/oopsla2015).
 
 Copyright (c) 2014-2015
 
@@ -24,5 +24,5 @@ These projects have a minimum requirement of Java 8. Please make sure JDK 8 is i
 - JDK 8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 - Eclipse: https://eclipse.org/downloads/
 
-More details on instructions/configurations are provided by each project. Please seek the file Readme.md under each directory for further help.
+But you can also use this framework from command line compilation. More details on instructions/configurations are provided by each project. Please seek the file Readme.md under each directory for further help.
 
